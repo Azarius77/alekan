@@ -1,0 +1,84 @@
+
+html {
+  font-size: 16px;
+
+  @include phones {
+    font-size: 15px;
+  }
+
+  @include tablets {
+    font-size: 14px;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  @include ubuntu();
+  color: $black;
+}
+.wrapper{
+  background-color: $fon;
+}
+.section {
+  margin: 0 auto;
+  max-width: 940px;
+// width: 95%;
+
+}
+
+
+//p {
+// margin: 0;
+
+//}
+
+h1,
+h2,
+h3,
+h4,
+h5 h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+li, ul {
+  list-style-type: none;
+  margin: 0;
+
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+.title {
+  font-size: 72px;
+  color: $black;
+  line-height: 1;
+
+  &--color {
+    &--black {
+      color: $black;
+    }
+
+    &--white {
+      color: $white;
+    }
+  }
+
+  &--centred {
+    text-align: center;
+  }
+}

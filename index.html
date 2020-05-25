@@ -5,8 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/main.css" />
     <title>Document</title>
+    
   </head>
   <body>
-    <div class="wrapper"></div>
+    <div class="wrapper">
+      <header class="section header">
+        <div class="header__top">
+          <a href="index.html" class="header__logo">
+            <img
+              src="./img/icons/logo.png"
+              alt="logo"
+              class="logo__pic"
+            />
+          </a>
+          <div class="contacts">
+            <a href="tel:88000039210" class="contacts__phone"
+              >8 (800) 00-392-10</a
+            >
+          </div>
+          <a class="button" href="#">Заказать звонок</a>
+        </div>
+        <menu class="header-menu">
+          <ul class="header-menu__list">
+            <li class="header-menu__item">
+              <a href="index.html" class="header-menu__link">Главная</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">О компании</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Каталог продукции</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Статьи</a>
+            </li>
+            </li>
+            <li class="header-menu__item">
+              <a href="contacts.html" class="header-menu__link">Контакты</a>
+            </li>
+          </ul>
+        </menu>
+      </header>
+      <section class="section banner">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img style="banner__img no-repeat scroll center center / cover; width: 940px " src="https://via.placeholder.com/1024x300.png?text=Баннер1">
+            <div class="banner__p">
+              <div class="banner__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+              <a href="#" class="banner__button button">Подробнее</a>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img style="banner__img no-repeat scroll center center / cover; width: 940px" src="https://via.placeholder.com/1024x300.png?text=Баннер2">
+            <div class="banner__p">
+              <div class="banner__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+              <a href="#" class="banner__button button">Подробнее</a>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img style="banner__img no-repeat scroll center center / cover; width: 940px" src="https://via.placeholder.com/1024x300.png?text=Баннер3 ">
+            <div class="banner__p">
+              <div class="banner__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+              <a href="#" class="banner__button button">Подробнее</a>
+            </div>
+          </div>
+          <br>
+        <div style="visibility: hidden;">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+        </div>
+      </div>
+      </section>
+      <section class="section about">
+        <div class="about-left">
+          <h2 class="about__title">О Компании</h2>
+          <p class="abour__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, fugiat nostrum explicabo corrupti iusto atque debitis totam. Adipisci natus nam obcaecati? Vel, provident earum non molestias cum recusandae hic dolorum.</p>
+          <p class="abour__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, fugiat nostrum explicabo corrupti iusto atque debitis totam. Adipisci natus nam obcaecati? Vel, provident earum non molestias cum recusandae hic dolorum.</p>
+          <p class="abour__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, fugiat nostrum explicabo corrupti iusto atque debitis totam. Adipisci natus nam obcaecati? Vel, provident earum non molestias cum recusandae hic dolorum.</p>
+        </div>
+        <div class="about-right">
+          <div class="section about">
+            <ul class="about__list">
+              <li class="about__item">
+                <img
+                  class="about__photo"
+                  src="./img/content/about-photo.jpg"
+                  alt="фотография отрасли"
+                />
+                <div class=about__hover">
+                  <div class="about__name">Пищевая промышленность</div>
+                  <p class="about__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus facilis rerum officia distinctio
+                  </p>
+                  <button class="button" type="button">Подробнее</button>
+                </div>
+              </li>
+              <li class="about__item">
+                <img
+                  class="about__photo"
+                  src="./img/content/about-photo.jpg"
+                  alt="фотография отрасли"
+                />
+                <div class=about__hover">
+                  <div class="about__name">Пищевая промышленность</div>
+                  <p class="about__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus facilis rerum officia distinctio
+                  </p>
+                  <button class="button" type="button">Подробнее</button>
+                </div>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+
+      </footer>
+    </div>
+    <script src="./scripts/banner.js"></script>
   </body>
 </html>
