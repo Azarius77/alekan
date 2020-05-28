@@ -340,11 +340,13 @@ template {
 html {
   font-size: 16px;
 }
+
 @media screen and (max-width: 768px) {
   html {
     font-size: 15px;
   }
 }
+
 @media screen and (max-width: 480px) {
   html {
     font-size: 14px;
@@ -418,24 +420,28 @@ a {
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: "ubuntu";
   src: url("./fonts/ubuntu-light-webfont.woff2") format("woff2"), url("./fonts/ubuntu-light-webfont.woff") format("woff");
   font-weight: light;
   font-style: normal;
 }
+
 @font-face {
   font-family: "ubuntu";
   src: url("./fonts/ubuntu-medium-webfont.woff2") format("woff2"), url("./fonts/ubuntu-medium-webfont.woff") format("woff");
   font-weight: medium;
   font-style: normal;
 }
+
 @font-face {
   font-family: "ubunturegular";
   src: url("./fonts/ubuntu-regular-webfont.woff2") format("woff2"), url("./fonts/ubuntu-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 .header__top {
   display: flex;
   justify-content: space-around;
@@ -447,11 +453,13 @@ a {
 .header-menu {
   padding: 0;
 }
+
 .header-menu__list {
   display: flex;
   justify-content: center;
   background-color: #7EC050;
 }
+
 .header-menu__item a {
   float: left;
   text-align: center;
@@ -460,6 +468,7 @@ a {
   padding: 14px 16px;
   font-weight: 500;
 }
+
 .header-menu__item a:hover {
   background-color: #6B85FD;
 }
@@ -475,16 +484,19 @@ a {
   max-height: 300px;
   position: relative;
 }
+
 .banner__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .banner__txt {
   position: absolute;
   top: 30%;
   left: 30%;
 }
+
 .banner__header {
   padding-bottom: 20px;
   color: #fff;
@@ -512,13 +524,18 @@ a {
   padding-bottom: 25px;
   padding-top: 20px;
 }
+
 .learn__header {
   color: #fff;
   font-size: 50px;
 }
-.learn__text, .learn__header, .learn__button {
+
+.learn__text,
+.learn__header,
+.learn__button {
   flex: 0 0 75px;
 }
+
 .learn__content {
   max-width: 50%;
   color: #f1f1f1;
@@ -526,6 +543,7 @@ a {
   align-items: center;
   flex-direction: column;
 }
+
 .learn__text {
   padding: 10px;
   text-align: left;
@@ -539,17 +557,20 @@ a {
   font-size: 12px;
   color: #F07443;
 }
+
 .sector__list {
   display: grid;
   grid-gap: 10px;
   padding-bottom: 10px;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
+
 @media screen and (min-width: 768px) {
   .sector__list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 .sector__item {
   display: flex;
   flex-direction: column;
@@ -557,6 +578,7 @@ a {
   opacity: 0.6;
   transition: 0.3s;
 }
+
 .sector__item:hover {
   opacity: 1;
 }
@@ -564,7 +586,9 @@ a {
 .partner {
   display: flex;
 }
-.partner__left, .partner__right {
+
+.partner__left,
+.partner__right {
   width: 50%;
   padding-bottom: 20px;
 }
@@ -582,10 +606,12 @@ a {
 .footer {
   background-color: #7EC050;
 }
+
 .footer__conteiner {
   display: flex;
   justify-content: space-between;
 }
+
 .footer__right {
   display: flex;
   flex-direction: column;

@@ -1,75 +1,24 @@
-.mySlides {
-   display: none;
-}
-
-.banner__img {
-   vertical-align: middle;
-   max-width: 100%;
-  
-}
-
-.slideshow-container {
-
-  position: relative;
-   margin: 0 auto;
-}
-
-.banner__text {
-   color: #f01717;
-   font-size: 24px;
-   padding: 8px 12px;
-   position: absolute;
-   top: 30%;
-   left: 50%;
-   text-align: center;
-}
-
-.numbertext {
-   color: #d42222;
-   font-size: 12px;
-   padding: 8px 12px;
-   position: absolute;
-   top: 0;
-}
-
-.active {
-   background-color: #717171;
-}
-
-.fade {
-   -webkit-animation-name: fade;
-   -webkit-animation-duration: 1.5s;
-   animation-name: fade;
-   animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-   from {
-      opacity: 0.4;
-   }
-   to {
-      opacity: 1;
-   }
-}
-
-@keyframes fade {
-   from {
-      opacity: 0.4;
-   }
-   to {
-      opacity: 1;
-   }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-   .text {
-      font-size: 11px;
-   }
-}
-
-.banner__button{
+.banner {
+   overflow: hidden;
+   max-height: 300px;
    position: relative;
-bottom: 80px;
-left: 80px;
+
+
+   &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+   }
+   &__txt{
+position: absolute;
+top: 30%;
+left: 30%;
+   }
+   &__header{
+      padding-bottom: 20px;
+      color: $white;
+      font-size: 50px;
+   }
+
 }

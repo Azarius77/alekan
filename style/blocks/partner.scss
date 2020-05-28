@@ -1,0 +1,20 @@
+.partner {
+   display: flex;
+
+   &__left,
+   &__right {
+      width: 50%;
+      padding-bottom: 20px;
+   }
+
+
+}
+
+.patner__text-header{
+   font-size: 40px;
+   word-wrap: break-word;
+}
+.partner__text{
+   padding-top: 20px;
+   padding-bottom: 40px;
+}
