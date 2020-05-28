@@ -54,6 +54,7 @@
    background-color: #fff;
    position: absolute;
    width: 100%;
+   transition: all 0.3s ease 0s;
 }
 .header__burger:before{
    top: 0;
@@ -62,12 +63,26 @@
    bottom: 0;
 }
 
+.header__burger.active:before{
+   transform: rotate(45deg);
+   top: 9px;
+}
+.header__burger.active:after{
+   transform: rotate(-45deg);
+   bottom: 9px;
+}
+.header__burger.active span{
+   transform: scale(0);
+}
+
+
 .header__burger span{
    position: absolute;
    background-color: #fff;
    left: 0;
    width: 100%;height: 2px;
    top: 9px;
+   transition: all 0.3s ease 0s;
 }
 
 .header-menu {
@@ -110,12 +125,37 @@
    }
    .header-menu{
       position: fixed;
-      top: 0;
+      top: -100%;
       left: 0;
       width: 100%;
       height: 100%;
       background-color: $blue1;
-     // z-index: 3;
+      padding: 70px 10px 0px 10px;
+      transition: all 0.3s ease 0s;
+      overflow: auto;
+
+      &.active{
+         top: 0;
+      }
+     
+     &__list{
+        display: block;
+     }
+     &__item{
+        margin: 0px 0px 20px 0px;
+     }
+     &__link{
+        font-size: 24px;
+     }
+
+
    }
+   .maincontent{
+      padding: 40px 0px 0px 0px;
+    }
+
+    .body.block{
+       overflow: hidden;
+    }
 
 }
