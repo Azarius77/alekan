@@ -20,28 +20,36 @@ html {
 
 html,
 body {
-  height: 100%;
+ 
   @include ubuntu();
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   line-height: 1.42;
   color: $black;
 }
 
-.wrapper {
-  background-color: $fon;
-  min-width: 100%;
+main{
+  flex: 1 0 auto;
+  padding-top: 80px;
+  @include tablets {
+    padding-top: 50px;
+  }
 }
+header{
+  flex: 0 0 400px;
 
+}
+footer{
+  flex: 0 0 140px;
+}
 .conteiner {
   max-width: 1180px;
   margin: 0 auto;
 padding: 0 10px;
-
-}
-.maincontent{
-  padding: 80px 0px 0px 0px;
 }
 
 h1,

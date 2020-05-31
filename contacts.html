@@ -7,72 +7,115 @@
    <title>Контакты</title>
 </head>
 <body>
-   <div class="wrapper">
-      <header class="section header">
-         <div class="header__top">
-           <a href="index.html" class="header__logo">
-             <img
-               src="https://via.placeholder.com/75/"
-               alt="logo"
-               class="logo__pic"
-             />
-           </a>
-           <div class="contacts">
-             <a href="tel:88000039210" class="contacts__phone"
-               >8 (800) 00-392-10</a
-             >
+  <header class="header">
+      <div class="conteiner header__body">
+        <a href="index.html" class="header__logo">
+          <img
+            src="./img/icons/logo.png"
+            alt="Алекан"
+            class="logo__pic"
+          />
+        </a>
+        <div class="header__burger">
+          <span></span>
+        </div>
+        <nav class="header-menu">
+          <ul class="header-menu__list">
+          <li class="header-menu__item">
+            <a href="index.html" class="header-menu__link">Главная</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link">О компании</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link">Каталог продукции</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link">Статьи</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link">Статьи</a>
+          </li>
+          </li>
+          <li class="header-menu__item">
+            <a href="contacts.html" class="header-menu__link">Контакты</a>
+          </li>
+          </ul>
+        </nav>
+      </div>
+  </header>
+  <main class="main">
+      <div class="conteiner contact-from">
+      <div class="form-area">
+        <h2 class="form-area__title" >Контакты</h2>
+        <div class="contact">
+           <div class="map">
+              <p class="form-area__text" >г.Н. Новгороду, ул Ларина, д.7</p>
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5cbdd7882311b1901a3b1b7cb49ae5206e2d335b7839f5184345dd4eeca8d69b&amp;source=constructor" width="600" height="450" frameborder="0"></iframe>
            </div>
-           <a class="button" href="#">Заказать звонок</a>
-         </div>
-         <menu class="header-menu">
-           <ul class="header-menu__list">
-             <li class="header-menu__item">
-               <a href="index.html" class="header-menu__link">Главная</a>
-             </li>
-             <li class="header-menu__item">
-               <a href="#" class="header-menu__link">О компании</a>
-             </li>
-             <li class="header-menu__item">
-               <a href="#" class="header-menu__link">Каталог продукции</a>
-             </li>
-             <li class="header-menu__item">
-               <a href="#" class="header-menu__link">Статьи</a>
-             </li>
-             </li>
-             <li class="header-menu__item">
-               <a href="#" class="header-menu__link">Контакты</a>
-             </li>
-           </ul>
-         </menu>
-       </header>
-   </div>
-
-   <section class="contacts" >
-      <div class="contacts__left">
-         <form action='' class='form'>
-            <p class='field required half'>
-              <label class='label required' for='name'>Ваше имя</label>
-              <input class='text-input' id='name' name='name' required type='text'>
-            </p>
-            <p class='field required half'>
-              <label class='label' for='email'>E-mail</label>
-              <input class='text-input' id='email' name='email' required type='email'>
-            </p>
-            <p class='field'>
-              <label class='label' for='message'>Сообщение</label>
-              <textarea class='textarea' cols='50' id='message' name='message' required rows='4'></textarea>
-            </p>
-            <p class='field'>
-              <input class='button' type='submit' value='Отправить'>
-            </p>
+        <form class="form">
+           <label>
+              <input type="tel" class="tel" id="phone" required>
+              <div class="label tel-text">Телефон *</div>
+           </label>
+           <label>
+              <input type="email" class="email" id="email">
+              <div class="label email-text">E-mail</div>
+           </label>
+           <label>
+               <textarea class="help-box" id="helpBox" cols="30" rows="10"></textarea>
+               <div class="label help-text">Ваше сообщение</div>
+           </label>
+           <p class="form-area__text--small">*- обязательно для заполнения</p>
+           <div class="submit-area">
+              <input type="submit" id="submit" value="Отправить"> 
+           </div>
           </form>
+        </div>
       </div>
-      <div class="contacts__right">
-         <div id="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5cbdd7882311b1901a3b1b7cb49ae5206e2d335b7839f5184345dd4eeca8d69b&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
-         </div>
+      </div>
+  </main>
+  <footer class="footer">
+      <div class="footer__conteiner conteiner">
+      <div class="footer__left">
+        <h4>Контакты</h4>
+        <p>
+          тел.: +7-963-963-98-65<br>
+          тел.: +7-963-963-98-65<br>
+          email: mail@alkn.ru<br>
+          г. Н. новгород, ларина 52
+
+        </p>
+      </div>
+      <div class="footer__center">
+        <a href="index.html" class="header__logo">
+          <img
+            src="./img/icons/logo.png"
+            alt="Алекан"
+            class="logo__pic"
+          />
+          <h3 class="logo__text logo__text-footer" >Алекан</h3>
+        </a>
+        
       </div>
 
-    </section
+      <div class="footer__right">
+        <h3>Решения для производств:</h3>
+        <a href="#" class="footer__link">Пищевая промышленность</a>
+        <a href="#" class="footer__link">Пищевая промышленность</a>
+        <a href="#" class="footer__link">Пищевая промышленность</a>
+        <a href="#" class="footer__link">Пищевая промышленность</a>
+        <a href="#" class="footer__link">Пищевая промышленность</a>
+      </div>
+    </div>
+  </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="./scripts/jquery.maskedinput.min.js"></script>
+<script src="scripts/script.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#phone").mask("+7 (999) 999-99-99");
+  });
+</script>
 </body>
 </html>
