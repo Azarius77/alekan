@@ -5,7 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -394,7 +393,7 @@ footer {
 .conteiner {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 30px;
 }
 
 h1,
@@ -739,6 +738,9 @@ a {
   text-align: center;
 }
 .contact-from .form-area__text {
+  padding-bottom: 20px;
+}
+.contact-from .form-area__text {
   max-width: 340px;
   font-weight: 300;
   color: #464646;
@@ -755,7 +757,7 @@ a {
   align-items: center;
 }
 .contact-from .contact .map {
-  width: 400px;
+  width: 620px;
   margin-right: 35px;
 }
 .contact-from .contact .map iframe {
@@ -776,19 +778,19 @@ a {
   position: absolute;
 }
 .contact-from .contact .form .tel-text {
-  transform: translateY(-69px);
+  transform: translateY(-73px);
   font-size: 13px;
   font-weight: 600;
   color: #4285F4;
 }
 .contact-from .contact .form .email-text {
-  transform: translateY(-51px);
+  transform: translateY(-72px);
 }
 .contact-from .contact .form .subject-text {
   transform: translateY(-52px);
 }
 .contact-from .contact .form .help-text {
-  transform: translateY(-112px);
+  transform: translateY(-121px);
 }
 .contact-from .contact .form input,
 .contact-from .contact .form textarea {
@@ -824,7 +826,7 @@ a {
 .contact-from .contact .form input:focus + .help-text, .contact-from .contact .form input:valid + .help-text,
 .contact-from .contact .form textarea:focus + .help-text,
 .contact-from .contact .form textarea:valid + .help-text {
-  transform: translateY(-127px);
+  transform: translateY(-121px);
 }
 .contact-from .contact .form textarea {
   max-height: 90px;
@@ -851,21 +853,22 @@ a {
 
 @media screen and (max-width: 1200px) {
   .contact-from {
-    width: 960px;
-    padding: 0px 60px;
+    width: 1040px;
+    padding: 0px 40px;
   }
   .contact-from .contact .map {
-    width: 320px;
+    width: 620px;
   }
   .contact-from .contact .form {
-    width: 485px;
+    width: 380px;
   }
 }
 @media screen and (max-width: 992px) {
   .contact-from {
     width: 710px;
     height: auto;
-    margin: 0;
+    margin: 0 auto;
+    padding: 0;
   }
   .contact-from .form-area {
     margin-top: 20px;
@@ -874,16 +877,19 @@ a {
     flex-direction: column;
   }
   .contact-from .contact .map {
+    order: 1;
     width: 100%;
     margin-right: 0;
     margin-bottom: 30px;
   }
   .contact-from .contact .form {
+    order: 0;
     width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
   .contact-from {
+    padding: 15px;
     width: 100%;
   }
 }
